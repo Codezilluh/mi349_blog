@@ -20,6 +20,33 @@
 		</nav>
 		<section>
 			<h2>Contact Me</h2>
+			<form>
+				<div>
+					<label for="name">Your name:</label>
+					<input id="name" name="name" type="text" />
+				</div>
+				<div>
+					<label for="email">Your Email:</label>
+					<input id="email" name="email" type="email" />
+				</div>
+				<div>
+					<label for="reason">Reason for contact:</label>
+					<select name="reason" id="reason">
+						<option value="hi">Saying hi</option>
+						<option value="contractor">
+							Looking for a contractor
+						</option>
+						<option value="interview">
+							Interested in an interview
+						</option>
+					</select>
+				</div>
+				<div>
+					<label for="comment">Your message:</label>
+					<textarea name="comment" id="comment"></textarea>
+				</div>
+				<input type="submit" value="Send" />
+			</form>
 		</section>
 	</body>
 </html>
