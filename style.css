@@ -15,10 +15,17 @@ body {
 	background: var(--light-green);
 }
 
+img {
+	pointer-events: none;
+	user-select: none;
+}
+
 header {
 	padding: var(--padding) calc(2 * var(--padding));
 	max-width: var(--max-width);
 	margin: auto;
+	pointer-events: none;
+	user-select: none;
 }
 
 header h1 {
@@ -37,6 +44,7 @@ nav {
 	font-size: 20px;
 	width: 100vw;
 	left: 0;
+	user-select: none;
 }
 
 nav ul {
