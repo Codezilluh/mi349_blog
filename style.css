@@ -1,6 +1,6 @@
 :root {
 	--gray-font: #474f53;
-	--dark-green: #266a4e;
+	--dark-green: #004c2fd1;
 	--light-green: #d1f0da;
 	--font: #171d20;
 	--font-light: rgb(222, 232, 238);
@@ -43,8 +43,10 @@ nav {
 	background-color: var(--dark-green);
 	font-size: 20px;
 	width: 100vw;
-	left: 0;
+	position: sticky;
+	top: 0;
 	user-select: none;
+	backdrop-filter: blur(10px);
 }
 
 nav ul {
