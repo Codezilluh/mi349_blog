@@ -1,0 +1,234 @@
+:root {
+	--gray-font: #697881;
+	--dark-green: #266a4e;
+	--light-green: #d1f0da;
+	--font: #171d20;
+	--font-light: rgb(222, 232, 238);
+	--padding: 20px;
+	--max-width: 1200px;
+}
+
+body {
+	margin: 0;
+	font-family: "Poppins";
+	color: var(--font);
+	background: var(--light-green);
+}
+
+header {
+	padding: var(--padding) calc(2 * var(--padding));
+	max-width: var(--max-width);
+	margin: auto;
+}
+
+header h1 {
+	font-size: 48px;
+	margin-bottom: 0;
+}
+
+header #subtext {
+	margin: 0;
+	font-size: 20px;
+	color: var(--gray-font);
+}
+
+nav {
+	background-color: var(--dark-green);
+	font-size: 20px;
+	width: 100vw;
+	left: 0;
+}
+
+nav ul {
+	padding: var(--padding) calc(2 * var(--padding));
+	list-style: none;
+	display: flex;
+	gap: calc(2 * var(--padding));
+	max-width: var(--max-width);
+	margin: auto;
+}
+
+nav ul li a {
+	color: var(--font-light);
+	text-decoration: none;
+	transition: border-color 0.3s ease;
+	border-color: transparent;
+}
+
+nav ul li a:hover {
+	border-top: 2px solid var(--font-light);
+	border-bottom: 2px solid var(--font-light);
+}
+
+section {
+	max-width: var(--max-width);
+	padding: calc(2 * var(--padding));
+	margin: auto;
+	font-size: 16px;
+}
+
+section.blog {
+	max-width: var(--max-width);
+	padding: calc(2 * var(--padding));
+	margin: auto;
+	display: flex;
+	gap: 60px;
+}
+
+section h2 {
+	margin: 0;
+}
+
+section p {
+	margin: var(--padding) 0;
+}
+
+section .right {
+	float: right;
+	margin-left: var(--padding);
+	margin-bottom: var(--padding);
+	width: 400px;
+}
+
+section .right img {
+	width: 400px;
+}
+
+section .right p {
+	margin: 10px 0 0 0;
+}
+
+section form {
+	margin: var(--padding) 0;
+	width: 500px;
+}
+
+section form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+section form input,
+section form select,
+section form textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	margin-bottom: var(--padding);
+	border-radius: 5px;
+	border: none;
+	outline: 1px solid var(--gray-font);
+	font-size: 16px;
+	font-family: inherit;
+}
+
+section form input[type="submit"] {
+	width: 120px;
+	float: right;
+}
+
+section form textarea {
+	resize: vertical;
+	height: 120px;
+	font-family: monospace;
+}
+
+section form :focus {
+	outline: 2px solid var(--dark-green);
+}
+
+article {
+	background: white;
+	border-radius: var(--padding);
+	overflow: hidden;
+	padding: var(--padding);
+	padding-top: 0;
+	margin: calc(-1 * var(--padding));
+	flex: 1;
+}
+
+article h2,
+article p {
+	margin: var(--padding) 0;
+}
+
+article p {
+	font-family: 16px;
+}
+
+article address::before {
+	content: "By ";
+}
+
+article .small {
+	font-size: 16px;
+	color: var(--gray-font);
+	margin: 0;
+}
+
+article img {
+	display: block;
+	width: calc(100% + 2 * var(--padding));
+	margin: 0 calc(-1 * var(--padding));
+	padding: 0;
+}
+
+article :last-child {
+	margin-bottom: 0;
+}
+
+table {
+	border: 2px solid var(--gray-font);
+	border-collapse: collapse;
+}
+
+table th,
+table td {
+	border: 1px solid var(--gray-font);
+	min-width: 80px;
+	text-align: center;
+	padding: 2px 10px;
+}
+
+table th {
+	background: #f0f0f0;
+	border-bottom: 2px solid var(--gray-font);
+}
+
+@media screen and (max-width: 900px) {
+	section {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	section .right {
+		float: unset;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	section .right img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		text-align: center;
+	}
+
+	header h1 {
+		font-size: 36px;
+	}
+
+	nav ul {
+		width: fit-content;
+		gap: calc(1.5 * var(--padding));
+	}
+
+	nav ul li {
+		text-align: center;
+	}
+}
