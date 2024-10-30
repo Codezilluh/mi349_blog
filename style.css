@@ -138,6 +138,22 @@ section form :focus {
 	outline: 2px solid var(--dark-green);
 }
 
+section form#newsletter {
+	margin: 0;
+	width: auto;
+}
+
+section form#newsletter label {
+	font-weight: bold;
+}
+
+section form#newsletter input {
+	display: inline-block;
+	width: fit-content;
+	float: unset;
+	margin-right: 10px;
+}
+
 article {
 	background: white;
 	border-radius: var(--padding);
