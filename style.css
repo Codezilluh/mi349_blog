@@ -3,7 +3,7 @@
 	--dark-green: #004c2fd1;
 	--light-green: #d1f0da;
 	--font: #171d20;
-	--font-light: rgb(222, 232, 238);
+	--font-light: #dee8ee;
 	--padding: 20px;
 	--max-width: 1200px;
 }
@@ -59,15 +59,15 @@ nav ul {
 }
 
 nav ul li a {
-	color: var(--font-light);
+	color: var(--light-green);
 	text-decoration: none;
 	transition: border-color 0.3s ease;
 	border-color: transparent;
 }
 
 nav ul li a:hover {
-	border-top: 2px solid var(--font-light);
-	border-bottom: 2px solid var(--font-light);
+	border-top: 2px solid var(--light-green);
+	border-bottom: 2px solid var(--light-green);
 }
 
 section {
