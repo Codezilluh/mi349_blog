@@ -155,6 +155,7 @@ section form#newsletter {
 	gap: var(--padding);
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 section form#newsletter label {
@@ -166,7 +167,7 @@ section form#newsletter label {
 section form#newsletter input {
 	display: inline-block;
 	width: fit-content;
-	float: unset;
+	float: none;
 	margin: 0;
 }
 
