@@ -214,6 +214,7 @@ article :last-child {
 table {
 	border: 2px solid var(--gray-font);
 	border-collapse: collapse;
+	margin: auto;
 }
 
 table th,
