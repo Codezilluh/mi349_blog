@@ -137,6 +137,7 @@ section form textarea {
 section form input[type="submit"] {
 	width: 120px;
 	float: right;
+	cursor: pointer;
 }
 
 section form textarea {
