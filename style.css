@@ -13,6 +13,7 @@ body {
 	font-family: "Poppins";
 	color: var(--font);
 	background: var(--light-green);
+	padding-bottom: var(--padding);
 }
 
 img {
