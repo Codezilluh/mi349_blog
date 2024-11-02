@@ -256,6 +256,7 @@ table th {
 @media screen and (max-width: 500px) {
 	header {
 		text-align: center;
+		padding: var(--padding);
 	}
 
 	header h1 {
@@ -265,6 +266,7 @@ table th {
 	nav ul {
 		width: fit-content;
 		gap: calc(1.5 * var(--padding));
+		padding: var(--padding);
 	}
 
 	nav ul li {
